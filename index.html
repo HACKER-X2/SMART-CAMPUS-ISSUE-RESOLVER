@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART CAMPUS | Campus Transparency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        
+        .college-hero {
+            /* PASTE YOUR OPTION B DIRECT LINK BELOW */
+            background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.9)), 
+                              url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-up { animation: slideUp 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="college-hero min-h-screen text-white flex flex-col">
+
+    <nav class="p-8 flex justify-between items-center max-w-7xl mx-auto w-full">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center font-black text-xl shadow-lg shadow-indigo-500/20">M</div>
+            <span class="font-black text-2xl tracking-tighter uppercase">SMART CAMPUS</span>
+        </div>
+        <div class="flex gap-4">
+            <button onclick="toggleModal('login-modal', true)" class="text-white font-bold text-sm px-4 py-2 hover:text-indigo-400 transition-all">Sign In</button>
+            <button onclick="toggleModal('signup-modal', true)" class="bg-white text-slate-900 px-6 py-2 rounded-xl font-bold text-sm hover:scale-105 transition-all">Join Community</button>
+        </div>
+    </nav>
+
+    <main class="flex-1 flex flex-col items-center justify-center text-center px-6 py-20">
+        <div class="animate-up">
+            <h1 class="text-7xl md:text-9xl font-black tracking-tighter mb-6 leading-[0.9]">
+                SMART<br><span class="text-indigo-500">CAMPUS</span>
+            </h1>
+            <p class="max-w-2xl text-lg md:text-xl text-slate-200 font-medium mb-12 mx-auto leading-relaxed">
+                Empowering students to shape a better campus. Report issues, upvote community concerns, and track resolutions in real-time.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <button onclick="toggleModal('signup-modal', true)" class="px-12 py-5 bg-indigo-600 text-white rounded-2xl font-black text-lg hover:bg-indigo-700 transition-all shadow-2xl shadow-indigo-500/30 active:scale-95">
+                    Get Started
+                </button>
+                <a href="#platforms" class="px-12 py-5 glass-card rounded-2xl font-black text-lg hover:bg-white/20 transition-all">
+                    Available Platforms
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer id="platforms" class="w-full px-6 pb-12">
+        <div class="max-w-5xl mx-auto glass-card p-10 rounded-[3rem] flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-black mb-1">Multi-Platform Access</h3>
+                <p class="text-slate-400 text-sm font-medium">Use SMART CAMPUS on Web or Android.</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="p-4 bg-white/5 rounded-2xl hover:bg-indigo-600 transition-all flex items-center gap-4 border border-white/10 group">
+                    <span class="text-2xl">🌐</span>
+                    <div class="text-left">
+                        <p class="text-[9px] font-bold text-slate-300 uppercase group-hover:text-white">Live Webapp</p>
+                        <p class="text-sm font-black uppercase">Open Web</p>
+                    </div>
+                </a>
+                <a href="YOUR_APK_LINK_HERE" class="p-4 bg-white/5 rounded-2xl hover:bg-indigo-600 transition-all flex items-center gap-4 border border-white/10 group">
+                    <span class="text-2xl">🤖</span>
+                    <div class="text-left">
+                        <p class="text-[9px] font-bold text-slate-300 uppercase group-hover:text-white">Download APK</p>
+                        <p class="text-sm font-black uppercase">Android</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-[10px] font-bold text-slate-500 uppercase tracking-[0.4em]">
+            Admin Access: <a href="admin-login.html" class="hover:text-indigo-400 transition-colors underline">Portal</a>
+        </div>
+    </footer>
+
+    <div id="signup-modal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-[200] hidden flex items-center justify-center p-6">
+        <div class="bg-white w-full max-w-md rounded-[3rem] p-10 text-slate-900 relative shadow-2xl">
+            <button onclick="toggleModal('signup-modal', false)" class="absolute top-8 right-8 text-slate-300 hover:text-slate-900 font-bold text-xl">✕</button>
+            <h2 class="text-3xl font-black mb-2 tracking-tighter">Create Account</h2>
+            <p class="text-slate-500 mb-8 font-medium">Join the campus community.</p>
+            <form id="main-signup-form" class="space-y-4">
+                <input type="text" placeholder="Full Name" required class="w-full p-4 bg-slate-50 rounded-2xl border border-slate-100 outline-none focus:ring-2 focus:ring-indigo-600 font-bold">
+                <input type="email" placeholder="College Email" required class="w-full p-4 bg-slate-50 rounded-2xl border border-slate-100 outline-none focus:ring-2 focus:ring-indigo-600 font-bold">
+                <input type="password" placeholder="Password" required class="w-full p-4 bg-slate-50 rounded-2xl border border-slate-100 outline-none focus:ring-2 focus:ring-indigo-600 font-bold">
+                <button type="submit" class="w-full bg-indigo-600 text-white font-black py-4 rounded-2xl mt-4 shadow-xl shadow-indigo-100 hover:bg-indigo-700 transition-all">Register Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="login-modal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-[200] hidden flex items-center justify-center p-6">
+        <div class="bg-white w-full max-w-md rounded-[3rem] p-10 text-slate-900 relative shadow-2xl">
+            <button onclick="toggleModal('login-modal', false)" class="absolute top-8 right-8 text-slate-300 hover:text-slate-900 font-bold text-xl">✕</button>
+            <h2 class="text-3xl font-black mb-2 tracking-tighter">Welcome Back</h2>
+            <p class="text-slate-500 mb-8 font-medium">Sign in to report campus issues.</p>
+            <form id="main-login-form" class="space-y-4">
+                <input type="email" placeholder="Email" required class="w-full p-4 bg-slate-50 rounded-2xl border border-slate-100 outline-none focus:ring-2 focus:ring-indigo-600 font-bold">
+                <input type="password" placeholder="Password" required class="w-full p-4 bg-slate-50 rounded-2xl border border-slate-100 outline-none focus:ring-2 focus:ring-indigo-600 font-bold">
+                <button type="submit" class="w-full bg-slate-900 text-white font-black py-4 rounded-2xl mt-4 shadow-xl hover:bg-black transition-all">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module">
+        import { auth, db } from './js/firebase-config.js';
+        import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        import { doc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+        // Global Modal Function
+        window.toggleModal = (id, show) => {
+            const modal = document.getElementById(id);
+            if (show) modal.classList.remove('hidden');
+            else modal.classList.add('hidden');
+        };
+
+        // Handle Signup
+        const signupForm = document.getElementById('main-signup-form');
+        signupForm.onsubmit = async (e) => {
+            e.preventDefault();
+            const inputs = signupForm.querySelectorAll('input');
+            const btn = signupForm.querySelector('button');
+            
+            btn.innerText = "Processing...";
+            btn.disabled = true;
+
+            try {
+                const userCredential = await createUserWithEmailAndPassword(auth, inputs[1].value, inputs[2].value);
+                await setDoc(doc(db, "users", userCredential.user.uid), {
+                    name: inputs[0].value,
+                    email: inputs[1].value,
+                    role: "student",
+                    timestamp: new Date()
+                });
+                window.location.href = "student.html";
+            } catch (err) {
+                alert(err.message);
+                btn.disabled = false;
+                btn.innerText = "Register Now";
+            }
+        };
+
+        // Handle Login
+        const loginForm = document.getElementById('main-login-form');
+        loginForm.onsubmit = async (e) => {
+            e.preventDefault();
+            const inputs = loginForm.querySelectorAll('input');
+            const btn = loginForm.querySelector('button');
+
+            btn.innerText = "Signing In...";
+            btn.disabled = true;
+
+            try {
+                await signInWithEmailAndPassword(auth, inputs[0].value, inputs[1].value);
+                window.location.href = "student.html";
+            } catch (err) {
+                alert(err.message);
+                btn.disabled = false;
+                btn.innerText = "Sign In";
+            }
+        };
+    </script>
+</body>
+</html>
